@@ -1,0 +1,18 @@
+@charset "UTF-8";
+@-ms-viewport {width: devide-width;}
+
+.entry {padding: 20px;
+        background-color: #dfe3e8;}
+
+.entry img {max-width: 100%;
+            height: auto;
+            margin: 0 0 30px 0;
+            vertical-align: bottom;}
+
+.entry h1 {margin: 0 0 20px 0;
+            font-size: 28px;
+            line-height: 1.2;}
+
+.entry p {margin: 0 0 20px 0;
+            font-size: 14px;
+            line-height: 1.6;}
