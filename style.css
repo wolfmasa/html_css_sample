@@ -20,9 +20,10 @@ body {margin: 0;
                 line-height: 1;}
         
         
-.header .logo {float: left;
-                border: none;
-                margin: -4px 10px 0 0;}
+.header .logo {max-width: 100%;
+                width: 300px;
+                height: auto;
+                border: none;}
 
 .header:after {content: "";
                 display: block;
