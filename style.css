@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@-ms-viewport {width: devide-width;}
+
+body {margin: 0;
+        font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;}
+
+.header {padding: 20px;
+        background-color: #dfe3e8;}
+
+.header h1 {margin: 0;
+            font-size: 20px;
+            line-height: 1;}
+
+.header h1 a {color: #000;
+            text-decoration: none;}
+
+.header p {margin: 8px 0 0 0;
+            font-size: 12px;
+            line-height: 1;}
+    
