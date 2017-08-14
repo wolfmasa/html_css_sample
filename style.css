@@ -5,28 +5,38 @@
 body {margin: 0;
         font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;}
 
-.header {padding: 20px;
-        background-color: #dfe3e8;}
+.header {height: 280px;
+        padding: 50px 20px 20px 20px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background-color: #dfe3e8;
+        background-image: url(img/header.jpg);
+        background-position: 68% 63%;
+        background-size: cover;}
 
 .header h1 {margin: 4px 0 0 0;
-            font-size: 20px;
+            font-size: 40px;
             line-height: 1;}
             
 .header h1 a {color: #000;
             text-decoration: none;}
 
 .header p {margin: 8px 0 0 0;
-                font-size: 12px;
+                font-size: 14px;
                 line-height: 1;}
         
-        
-.header .logo {max-width: 100%;
-                width: 300px;
+.header .photo {max-width: 100%;
                 height: auto;
-                border: none;}
+                margin: 15px 0 0 0;
+                vertical-align: bottom;}
+
+.header .text {float: left;}
+
+.header .added {float: right;}
 
 .header:after {content: "";
                 display: block;
                 clear: both;}
 
-.header {*zoom: 1;}
+.header        {*zoom: 1;}
