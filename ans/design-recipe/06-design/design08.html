@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>サンプル</title>
+<meta name="viewport" content="width=device-width">
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* 記事 */
+.entry	{padding: 20px;
+	background-color: #dfe3e8;}
+
+.entry img	{max-width: 100%;
+	height: auto;
+	margin: 0 0 30px 0;
+	vertical-align: bottom;}
+
+.entry h1	{margin: 0 0 20px 0;
+	font-size: 28px;
+	line-height: 1.2;}
+
+.entry p	{margin: 0 0 20px 0;
+	font-size: 14px;
+	line-height: 1.6;}
+
+
+
+/* 背景画像の設定 */
+.entry	{background-image: url(img/candle.jpg);
+	background-position: 50% 50%;
+	background-size: cover;
+	color: #fff;}
+
+
+
+/* ボタン */
+.button	{display: inline-block;
+	padding: 10px 30px 10px 30px;
+	background-color: #ed1a7d;
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;}
+
+.button:hover, 
+.button:focus	{outline: none;
+	background-color: #ff9bca;}
+
+
+/* 円形にする設定 */
+.button	{display: block;
+	height: 100px;
+	width: 100px;
+	margin: 0 auto 0 auto;
+	padding: 40px 0 0 0;
+	border-radius: 50px;
+	text-align: center;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;}
+
+
+
+/* パーツを重ねる設定 */
+.entry	{position: relative;}
+
+.entry .button	{position: absolute;
+	bottom: -40px;
+	right: 30px;}
+
+
+
+</style>
+</head>
+
+<body>
+
+
+<div class="entry">
+	<h1>記事のタイトル</h1>
+
+	<p>この文章は記事の本文です。この文章は記事の本文です。この文章は記事の本文です。この文章は記事の本文です。この文章は記事の本文です。この文章は記事の本文です。この文章は記事の本文です。この文章は記事の本文です。</p>
+
+	<a href="#" class="button">MORE</a>
+
+</div>
+
+
+
+
+
+</body>
+</html>

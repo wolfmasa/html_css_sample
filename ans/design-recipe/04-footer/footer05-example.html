@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>サンプル</title>
+<meta name="viewport" content="width=device-width">
+
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* フッター */
+.footer	{padding: 20px;
+	background-color: #dfe3e8;}
+
+.footer p	{margin: 0 0 3px 0;
+	font-size: 12px;
+	line-height: 1.4;}
+
+.footer a	{color: #666;
+	text-decoration: none;}
+
+.footer .text	{float: left;}
+
+.footer .added	{float: right;}
+
+.footer:after	{content: "";
+	display: block;
+	clear: both;}
+.footer	{*zoom: 1;}
+
+
+
+/* メニュー */
+.menu	{padding: 0px; 
+	background-color: #dfe3e8;}
+
+.menu ul,
+.menu ol	{margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 1.4;
+	list-style: none;}
+
+.menu li a	{display: block;
+	padding: 0 10px 0 10px;
+	color: #000;
+	text-decoration: none;}
+
+.menu li a:hover	{background-color: transparent;}
+
+.menu li a span	{display: inline-block;
+	text-indent: -9999px}
+
+.menu li a i	{font-size: 40px;
+	color: #e16;}
+
+.menu li a:hover i	{color: #f80;}
+
+.menu li	{float: left;}
+
+.menu ul:after,
+.menu ol:after	{content: "";
+	display: block;
+	clear: both;}
+.menu ul,
+.menu ol	{*zoom: 1;}
+
+.fa	{*zoom: 1;}
+.fa-twitter-square {*zoom: expression(this.innerHTML = '&#xf081;');}
+.fa-facebook-square {*zoom: expression(this.innerHTML = '&#xf082;');}
+.fa-google-plus-square {*zoom: expression(this.innerHTML = '&#xf0d4;');}
+.fa-rss-square {*zoom: expression(this.innerHTML = '&#xf143;');}
+
+
+</style>
+</head>
+
+<body>
+
+<div class="footer">
+	<div class="text">
+	<p>Copyright &copy; SAMPLE SITE</p>
+	<p>Powered by <a href="#">TOOLS</a></p>
+	</div>
+
+	<div class="added">
+
+		<div class="menu">
+			<ul>
+				<li><a href="#"><i class="fa fa-twitter-square"></i><span>Twitter</span></a></li>
+				<li><a href="#"><i class="fa fa-facebook-square"></i><span>Facebook</span></a></li>
+				<li><a href="#"><i class="fa fa-google-plus-square"></i><span>Google+</span></a></li>
+				<li><a href="#"><i class="fa fa-rss-square"></i><span>RSS</span></a></li>
+			</ul>
+		</div>
+
+	</div>
+</div>
+
+</body>
+</html>

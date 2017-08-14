@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+
+<title>HTML+CSSデザインレシピ サンプル</title>
+
+
+<style>
+@-ms-viewport	{width: device-width;}
+
+body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;}
+h1,h2,h3,h4,h5,h6	{font-weight: normal;}
+
+
+.container	{width: 700px;
+	margin: 20px auto;}
+
+h1 span	{display: block;
+	font-size: 18px;}
+
+
+.menu	{padding: 0;}
+
+.menu ul,
+.menu ol	{margin: 0;
+	padding: 0;
+	font-size: 12px;
+	line-height: 1.4;
+	list-style: none;}
+
+.menu li a	{display: block;
+	margin: 0 5px 5px 0;
+	padding: 8px 10px 8px 10px;
+	border: solid 1px #ccc;
+	border-radius: 3px;
+	color: #000;
+	text-decoration: none;}
+
+.menu li a:hover	{background-color: #eee;}
+
+.menu li	{float: left;}
+
+.menu ul:after,
+.menu ol:after	{content: "";
+	display: block;
+	clear: both;}
+.menu ul,
+.menu ol	{*zoom: 1;}
+
+
+.chapter	{margin: 40px 0 40px 0;
+	padding: 20px 0 0 0;}
+
+.chapter h2	{margin: 0 0 10px 0;
+	background-color: #2479bf;
+	color: #fff;
+	font-size: 18px;
+	line-height: 1.2;}
+
+.chapter h2 span	{
+	display: inline-block;
+	width: 7.8em;
+	margin-right: 1em;
+	padding: 15px 0 15px 10px;
+	border-right: solid 2px #fff;
+	background-color: #2e3540;}
+
+.chapter ul,
+.chapter ol	{margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 1.4;
+	list-style: none;}
+
+.chapter li a	{display: block;
+	padding: 5px 0 5px 0;
+	color: #000;
+	text-decoration: none;}
+
+.chapter li a:hover	{background-color: #eee;}
+
+.chapter .headingnum	{display: block;
+	float: left;
+	width: 10.5em;
+	border: none;
+	text-align: right;}
+
+.chapter .headingtitle	{display: block;
+	margin: 0 0 0 13em;}
+
+.chapter .title	{font-weight: bold;}
+
+.chapter .desc	{color: #666;
+	font-size: 12px;}
+
+.chapter li a:after	{content: "";
+	display: block;}
+.chapter li a	{*zoom: 1;}
+
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+
+<div class="contents">
+<h1><span>これからの「標準」を身につける</span>HTML+CSSデザインレシピ</h1>
+
+
+<div class="menu">
+	<ul>
+<li><a href="#base">BASE</a></li>
+<li><a href="#header">HEADER</a></li>
+<li><a href="#entry">ENTRY</a></li>
+<li><a href="#menu">MENU</a></li>
+<li><a href="#footer">FOOTER</a></li>
+<li><a href="#other">OTHER</a></li>
+<li><a href="#design">DESIGN</a></li>
+	</ul>
+	<ul>
+<li><a href="#bootstrap">BOOTSTRAP</a></li>
+<li><a href="#foundation">FOUNDATION</a></li>
+<li><a href="#noframework">NO FRAMEWORK</a></li>
+<li><a href="#recipe">RECIPE</a></li>
+	</ul>
+</div><!-- menu -->
+
+
+<div id="base" class="chapter"><h2><span>BASE</span>基本</h2><ul>
+<li><a href="00_base/sample.html"><span class="headingnum">BASE</span><span class="headingtitle">ページを作成するための下準備</span></a></li>
+</ul></div><div id="header" class="chapter"><h2><span>CHAPTER 1</span>ヘッダー</h2><ul>
+<li><a href="01-header/header01.html"><span class="headingnum">HEADER 01</span><span class="headingtitle">ヘッダーの基本レイアウト</span></a></li>
+<li><a href="01-header/header02.html"><span class="headingnum">HEADER 02</span><span class="headingtitle">中央揃えのレイアウト</span></a></li>
+<li><a href="01-header/header03.html"><span class="headingnum">HEADER 03</span><span class="headingtitle">ロゴ画像とサイト名を並べたレイアウト</span></a></li>
+<li><a href="01-header/header03-a-a.html"><span class="headingnum">03-A-A</span><span class="headingtitle">ロゴ画像とサイト名を上下に並べて中央揃えにするA</span></a></li>
+<li><a href="01-header/header03-a-b.html"><span class="headingnum">03-A-B</span><span class="headingtitle">ロゴ画像とサイト名を上下に並べて中央揃えにするB</span></a></li>
+<li><a href="01-header/header04.html"><span class="headingnum">HEADER 04</span><span class="headingtitle">ロゴ画像と複数行のテキストを並べたレイアウト</span></a></li>
+<li><a href="01-header/header04-a.html"><span class="headingnum">04-A</span><span class="headingtitle">ロゴ画像と複数行のテキストを垂直方向で中央揃えにする</span></a></li>
+<li><a href="01-header/tips-header04-overflow1.html"><span class="headingnum">TIPS</span><span class="headingtitle">clearfix</span></a></li>
+<li><a href="01-header/tips-header04-overflow2.html"><span class="headingnum"></span><span class="headingtitle">overflow</span></a></li>
+<li><a href="01-header/header05.html"><span class="headingnum">HEADER 05</span><span class="headingtitle">サイト名を画像で表示したレイアウト</span></a></li>
+<li><a href="01-header/header05-a.html"><span class="headingnum">05-A</span><span class="headingtitle">高解像度な閲覧環境で画像がぼけるのを防ぐ</span></a></li>
+<li><a href="01-header/header05-b-a.html"><span class="headingnum">05-B-A</span><span class="headingtitle">SVGフォーマットの画像を利用するA</span></a></li>
+<li><a href="01-header/header05-b-b.html"><span class="headingnum">05-B-B</span><span class="headingtitle">SVGフォーマットの画像を利用するB</span></a></li>
+<li><a href="01-header/header06.html"><span class="headingnum">HEADER 06</span><span class="headingtitle">ヘッダー画像を表示したレイアウト</span></a></li>
+<li><a href="01-header/header07.html"><span class="headingnum">HEADER 07</span><span class="headingtitle">ヘッダー画像にテキストを重ねたレイアウト</span></a></li>
+<li><a href="01-header/header08.html"><span class="headingnum">HEADER 08</span><span class="headingtitle">ヘッダーの右端にパーツを追加したレイアウト</span></a></li>
+<li><a href="01-header/header08-example.html"><span class="headingnum"></span><span class="headingtitle">（使用例）</span></a></li>
+</ul></div><div id="entry" class="chapter"><h2><span>CHAPTER 2</span>記事</h2><ul>
+<li><a href="02-entry/entry01.html"><span class="headingnum">ENTRY 01</span><span class="headingtitle">記事の基本レイアウト</span></a></li>
+<li><a href="02-entry/entry01-a.html"><span class="headingnum">01-A</span><span class="headingtitle">パーツ内の最後の要素の下マージンを削除する</span></a></li>
+<li><a href="02-entry/entry02.html"><span class="headingnum">ENTRY 02</span><span class="headingtitle">中央揃えのレイアウト</span></a></li>
+<li><a href="02-entry/entry02-a.html"><span class="headingnum">02-A</span><span class="headingtitle">中央揃えの中で本文だけを左揃えにする場合</span></a></li>
+<li><a href="02-entry/entry02-b-a.html"><span class="headingnum">02-B-A</span><span class="headingtitle">画像だけを中央揃えにする場合A</span></a></li>
+<li><a href="02-entry/entry02-b-b.html"><span class="headingnum">02-B-B</span><span class="headingtitle">画像だけを中央揃えにする場合B</span></a></li>
+<li><a href="02-entry/entry03.html"><span class="headingnum">ENTRY 03</span><span class="headingtitle">画像にテキストを回り込ませたレイアウト</span></a></li>
+<li><a href="02-entry/entry03-a.html"><span class="headingnum">03-A</span><span class="headingtitle">画像の下にテキストを回り込ませない場合</span></a></li>
+<li><a href="02-entry/entry04.html"><span class="headingnum">ENTRY 04</span><span class="headingtitle">タイトルの下にパーツを追加したレイアウト</span></a></li>
+<li><a href="02-entry/entry04-example.html"><span class="headingnum"></span><span class="headingtitle">（使用例）</span></a></li>
+</ul></div><div id="menu" class="chapter"><h2><span>CHAPTER 3</span>メニュー</h2><ul>
+<li><a href="03-menu/menu01.html"><span class="headingnum">MENU 01</span><span class="headingtitle">リンクを縦に並べたメニューの基本レイアウト</span></a></li>
+<li><a href="03-menu/menu01-a.html"><span class="headingnum">01-A</span><span class="headingtitle">縦に並べたリンクを罫線で区切る</span></a></li>
+<li><a href="03-menu/menu01-multi.html"><span class="headingnum"></span><span class="headingtitle">（複数行になる場合）</span></a></li>
+<li><a href="03-menu/menu02.html"><span class="headingnum">MENU 02</span><span class="headingtitle">階層構造を持つメニュー</span></a></li>
+<li><a href="03-menu/menu03.html"><span class="headingnum">MENU 03</span><span class="headingtitle">リストマークを画像で表示したメニュー</span></a></li>
+<li><a href="03-menu/menu03-multi.html"><span class="headingnum"></span><span class="headingtitle">（複数行になる場合）</span></a></li>
+<li><a href="03-menu/menu03-a.html"><span class="headingnum">03-A</span><span class="headingtitle">リストマークを垂直方向の中央に揃える</span></a></li>
+<li><a href="03-menu/menu03-b.html"><span class="headingnum">03-B</span><span class="headingtitle">リストマークを文字で表示する</span></a></li>
+<li><a href="03-menu/menu03-c.html"><span class="headingnum">03-C</span><span class="headingtitle">リストマークをアイコンフォントで表示する</span></a></li>
+<li><a href="03-menu/menu03-d.html"><span class="headingnum">03-D</span><span class="headingtitle">リンクの右端に右向きの矢印アイコンを表示する</span></a></li>
+<li><a href="03-menu/menu03-d-multi.html"><span class="headingnum"></span><span class="headingtitle">（複数行になる場合）</span></a></li>
+<li><a href="03-menu/menu03-e.html"><span class="headingnum">03-E</span><span class="headingtitle">リストマークを連番で表示する</span></a></li>
+<li><a href="03-menu/menu04.html"><span class="headingnum">MENU 04</span><span class="headingtitle">サムネイル画像の横にテキストを並べたメニュー</span></a></li>
+<li><a href="03-menu/menu04-a.html"><span class="headingnum">04-A</span><span class="headingtitle">日付の横にタイトルを並べたメニュー</span></a></li>
+<li><a href="03-menu/menu05.html"><span class="headingnum">MENU 05</span><span class="headingtitle">リンクを横に並べたメニューの基本レイアウト</span></a></li>
+<li><a href="03-menu/menu05-a.html"><span class="headingnum">05-A</span><span class="headingtitle">メニューをコンパクトに表示する</span></a></li>
+<li><a href="03-menu/menu05-b-a.html"><span class="headingnum">05-B-A</span><span class="headingtitle">横に並べたリンクを罫線で区切るA</span></a></li>
+<li><a href="03-menu/menu05-b-b.html"><span class="headingnum">05-B-B</span><span class="headingtitle">横に並べたリンクを罫線で区切るB</span></a></li>
+<li><a href="03-menu/menu05-c.html"><span class="headingnum">05-C</span><span class="headingtitle">リンクの横幅を固定する場合</span></a></li>
+<li><a href="03-menu/menu05-d.html"><span class="headingnum">05-D</span><span class="headingtitle">等分割した横幅でリンクを表示する場合　その１</span></a></li>
+<li><a href="03-menu/menu05-e.html"><span class="headingnum">05-E</span><span class="headingtitle">等分割した横幅でリンクを表示する場合　その２</span></a></li>
+<li><a href="03-menu/menu05-f.html"><span class="headingnum">05-F</span><span class="headingtitle">各リンクに付加情報を追加する</span></a></li>
+<li><a href="03-menu/menu05-g.html"><span class="headingnum">05-G</span><span class="headingtitle">横に並べたリンクをパンくずリストとして利用する</span></a></li>
+<li><a href="03-menu/menu06.html"><span class="headingnum">MENU 06</span><span class="headingtitle">アイコンを横に並べたメニュー</span></a></li>
+<li><a href="03-menu/menu06-a.html"><span class="headingnum">06-A</span><span class="headingtitle">アイコンを画像で表示する場合</span></a></li>
+<li><a href="03-menu/menu07.html"><span class="headingnum">MENU 07</span><span class="headingtitle">アイコンにテキストをつけて横に並べたメニュー</span></a></li>
+<li><a href="03-menu/menu07-a.html"><span class="headingnum">07-A</span><span class="headingtitle">アイコンを画像で表示する場合</span></a></li>
+<li><a href="03-menu/tips-tab-bootstrap/sample.html"><span class="headingnum">TIPS</span><span class="headingtitle">タブメニュー （Bootstrap）</span></a></li>
+<li><a href="03-menu/tips-tab-foundation/sample.html"><span class="headingnum"></span><span class="headingtitle">タブメニュー （Foundation）</span></a></li>
+</ul></div><div id="footer" class="chapter"><h2><span>CHAPTER 4</span>フッター</h2><ul>
+<li><a href="04-footer/footer01.html"><span class="headingnum">FOOTER 01</span><span class="headingtitle">フッターの基本レイアウト</span></a></li>
+<li><a href="04-footer/footer02.html"><span class="headingnum">FOOTER 02</span><span class="headingtitle">中央揃えのレイアウト</span></a></li>
+<li><a href="04-footer/footer03.html"><span class="headingnum">FOOTER 03</span><span class="headingtitle">ロゴ画像と複数行のテキストを並べたレイアウト</span></a></li>
+<li><a href="04-footer/footer04.html"><span class="headingnum">FOOTER 04</span><span class="headingtitle">フッター画像にテキストを重ねたレイアウト</span></a></li>
+<li><a href="04-footer/footer04-a.html"><span class="headingnum">04-A</span><span class="headingtitle">ページの背景色で表示する</span></a></li>
+<li><a href="04-footer/footer05.html"><span class="headingnum">FOOTER 05</span><span class="headingtitle">フッターの右端にパーツを追加したレイアウト</span></a></li>
+<li><a href="04-footer/footer05-example.html"><span class="headingnum"></span><span class="headingtitle">（使用例）</span></a></li>
+</ul></div><div id="other" class="chapter"><h2><span>CHAPTER 5</span>その他</h2><ul>
+<li><a href="05-other/other01.html"><span class="headingnum">OTHER 01</span><span class="headingtitle">ボタン</span></a></li>
+<li><a href="05-other/other01-a.html"><span class="headingnum">01-A</span><span class="headingtitle">フォームを利用したボタン</span></a></li>
+<li><a href="05-other/other01-b.html"><span class="headingnum">01-B</span><span class="headingtitle">配置した場所の横幅に合わせてボタンを表示する</span></a></li>
+<li><a href="05-other/other01-c.html"><span class="headingnum">01-C</span><span class="headingtitle">ラベルの表示</span></a></li>
+<li><a href="05-other/other02.html"><span class="headingnum">OTHER 02</span><span class="headingtitle">フォーム</span></a></li>
+<li><a href="05-other/other03.html"><span class="headingnum">OTHER 03</span><span class="headingtitle">テーブル（表組み）</span></a></li>
+<li><a href="05-other/other03-a.html"><span class="headingnum">03-A</span><span class="headingtitle">横方向の罫線のみで区切る</span></a></li>
+<li><a href="05-other/other03-b.html"><span class="headingnum">03-B</span><span class="headingtitle">テーブルの行をストライプにする</span></a></li>
+<li><a href="05-other/other03-c.html"><span class="headingnum">03-C</span><span class="headingtitle">テーブルの列をストライプにする</span></a></li>
+<li><a href="05-other/other03-d.html"><span class="headingnum">03-D</span><span class="headingtitle">列ごとに位置揃えを変更する   </span></a></li>
+<li><a href="05-other/other03-e.html"><span class="headingnum">03-E</span><span class="headingtitle">レスポンシブテーブル</span></a></li>
+<li><a href="05-other/other04.html"><span class="headingnum">OTHER 04</span><span class="headingtitle">段組み</span></a></li>
+<li><a href="05-other/other04-a.html"><span class="headingnum">04-A</span><span class="headingtitle">段ごとに横幅を変える</span></a></li>
+<li><a href="05-other/other04-b-a.html"><span class="headingnum">04-B-A</span><span class="headingtitle">段数を変えるA</span></a></li>
+<li><a href="05-other/other04-b-b.html"><span class="headingnum">04-B-B</span><span class="headingtitle">段数を変えるB</span></a></li>
+<li><a href="05-other/other05.html"><span class="headingnum">OTHER 05</span><span class="headingtitle">グループ</span></a></li>
+</ul></div><div id="design" class="chapter"><h2><span>CHAPTER 6</span>デザイン</h2><ul>
+<li><a href="06-design/design01.html"><span class="headingnum">DESIGN 01</span><span class="headingtitle">枠で囲むデザイン</span></a></li>
+<li><a href="06-design/design01-a-a.html"><span class="headingnum">01-A-A</span><span class="headingtitle">枠のデザインのアレンジA</span></a></li>
+<li><a href="06-design/design01-a-b.html"><span class="headingnum">01-A-B</span><span class="headingtitle">枠のデザインのアレンジB</span></a></li>
+<li><a href="06-design/design01-a-c.html"><span class="headingnum">01-A-C</span><span class="headingtitle">枠のデザインのアレンジC</span></a></li>
+<li><a href="06-design/design01-a-d.html"><span class="headingnum">01-A-D</span><span class="headingtitle">枠のデザインのアレンジD</span></a></li>
+<li><a href="06-design/design01-a-e.html"><span class="headingnum">01-A-E</span><span class="headingtitle">枠のデザインのアレンジE</span></a></li>
+<li><a href="06-design/design01-a-f.html"><span class="headingnum">01-A-F</span><span class="headingtitle">枠のデザインのアレンジF</span></a></li>
+<li><a href="06-design/design01-a-g.html"><span class="headingnum">01-A-G</span><span class="headingtitle">枠のデザインのアレンジG</span></a></li>
+<li><a href="06-design/design01-a-h.html"><span class="headingnum">01-A-H</span><span class="headingtitle">枠のデザインのアレンジH</span></a></li>
+<li><a href="06-design/design01-a-i.html"><span class="headingnum">01-A-I</span><span class="headingtitle">枠のデザインのアレンジI</span></a></li>
+<li><a href="06-design/design01-b-a.html"><span class="headingnum">01-B-A</span><span class="headingtitle">枠のデザインで見出しやボタンをアレンジする</span></a></li>
+<li><a href="06-design/design01-b-b.html"><span class="headingnum">01-B-B</span><span class="headingtitle">枠のデザインで見出しやボタンをアレンジする</span></a></li>
+<li><a href="06-design/design02.html"><span class="headingnum">DESIGN 02</span><span class="headingtitle">枠と見出しを一体化したデザイン</span></a></li>
+<li><a href="06-design/design02-a-a.html"><span class="headingnum">02-A-A</span><span class="headingtitle">枠と見出しを一体化したデザインのアレンジA</span></a></li>
+<li><a href="06-design/design02-a-b.html"><span class="headingnum">02-A-B</span><span class="headingtitle">枠と見出しを一体化したデザインのアレンジB</span></a></li>
+<li><a href="06-design/design02-a-c.html"><span class="headingnum">02-A-C</span><span class="headingtitle">枠と見出しを一体化したデザインのアレンジC</span></a></li>
+<li><a href="06-design/design02-a-d.html"><span class="headingnum">02-A-D</span><span class="headingtitle">枠と見出しを一体化したデザインのアレンジD</span></a></li>
+<li><a href="06-design/design02-a-e.html"><span class="headingnum">02-A-E</span><span class="headingtitle">枠と見出しを一体化したデザインのアレンジE</span></a></li>
+<li><a href="06-design/design02-a-f.html"><span class="headingnum">02-A-F</span><span class="headingtitle">枠と見出しを一体化したデザインのアレンジF</span></a></li>
+<li><a href="06-design/design02-b-a.html"><span class="headingnum">02-B-A</span><span class="headingtitle">枠とメニューを一体化したデザインA</span></a></li>
+<li><a href="06-design/design02-b-b.html"><span class="headingnum">02-B-B</span><span class="headingtitle">枠とメニューを一体化したデザインB</span></a></li>
+<li><a href="06-design/design02-b-c.html"><span class="headingnum">02-B-C</span><span class="headingtitle">枠とメニューを一体化したデザインC</span></a></li>
+<li><a href="06-design/design03.html"><span class="headingnum">DESIGN 03</span><span class="headingtitle">罫線で区切るデザイン</span></a></li>
+<li><a href="06-design/design03-a-a.html"><span class="headingnum">03-A-A</span><span class="headingtitle">罫線で区切るデザインのアレンジA</span></a></li>
+<li><a href="06-design/design03-a-b.html"><span class="headingnum">03-A-B</span><span class="headingtitle">罫線で区切るデザインのアレンジB</span></a></li>
+<li><a href="06-design/design03-a-c.html"><span class="headingnum">03-A-C</span><span class="headingtitle">罫線で区切るデザインのアレンジC</span></a></li>
+<li><a href="06-design/design03-a-d.html"><span class="headingnum">03-A-D</span><span class="headingtitle">罫線で区切るデザインのアレンジD</span></a></li>
+<li><a href="06-design/design03-a-e.html"><span class="headingnum">03-A-E</span><span class="headingtitle">罫線で区切るデザインのアレンジE</span></a></li>
+<li><a href="06-design/design03-a-f.html"><span class="headingnum">03-A-F</span><span class="headingtitle">罫線で区切るデザインのアレンジF</span></a></li>
+<li><a href="06-design/design04.html"><span class="headingnum">DESIGN 04</span><span class="headingtitle">円形の枠で囲むデザイン</span></a></li>
+<li><a href="06-design/design04-a-a.html"><span class="headingnum">04-A-A</span><span class="headingtitle">円形の枠のデザインのアレンジA</span></a></li>
+<li><a href="06-design/design04-a-b.html"><span class="headingnum">04-A-B</span><span class="headingtitle">円形の枠のデザインのアレンジB</span></a></li>
+<li><a href="06-design/design04-a-c.html"><span class="headingnum">04-A-C</span><span class="headingtitle">円形の枠のデザインのアレンジC</span></a></li>
+<li><a href="06-design/design04-a-d.html"><span class="headingnum">04-A-D</span><span class="headingtitle">円形の枠のデザインのアレンジD</span></a></li>
+<li><a href="06-design/design04-a-e.html"><span class="headingnum">04-A-E</span><span class="headingtitle">円形の枠のデザインのアレンジE</span></a></li>
+<li><a href="06-design/design04-a-f.html"><span class="headingnum">04-A-F</span><span class="headingtitle">円形の枠のデザインのアレンジF</span></a></li>
+<li><a href="06-design/design04-a-g.html"><span class="headingnum">04-A-G</span><span class="headingtitle">円形の枠のデザインのアレンジG</span></a></li>
+<li><a href="06-design/design04-a-h.html"><span class="headingnum">04-A-H</span><span class="headingtitle">円形の枠のデザインのアレンジH</span></a></li>
+<li><a href="06-design/design04-a-i.html"><span class="headingnum">04-A-I</span><span class="headingtitle">円形の枠のデザインのアレンジI</span></a></li>
+<li><a href="06-design/design04-b.html"><span class="headingnum">04-B</span><span class="headingtitle">ボタンを円形にする</span></a></li>
+<li><a href="06-design/design04-c.html"><span class="headingnum">04-C</span><span class="headingtitle">画像を円形に切り抜く</span></a></li>
+<li><a href="06-design/design04-d.html"><span class="headingnum">04-D</span><span class="headingtitle">半円形の枠で囲む</span></a></li>
+<li><a href="06-design/design05.html"><span class="headingnum">DESIGN 05</span><span class="headingtitle">吹き出し型の枠で囲むデザイン</span></a></li>
+<li><a href="06-design/design05-a.html"><span class="headingnum">05-A</span><span class="headingtitle">罫線で囲んだ枠を吹き出し型にする</span></a></li>
+<li><a href="06-design/design05-b.html"><span class="headingnum">05-B</span><span class="headingtitle">吹き出し型の枠に影をつける</span></a></li>
+<li><a href="06-design/design06.html"><span class="headingnum">DESIGN 06</span><span class="headingtitle">背景画像を利用したデザイン</span></a></li>
+<li><a href="06-design/design06-a.html"><span class="headingnum">06-A</span><span class="headingtitle">背景画像に重ねたテキストに影をつけて読みやすくする</span></a></li>
+<li><a href="06-design/design06-b.html"><span class="headingnum">06-B</span><span class="headingtitle">背景画像に重ねたテキストを半透明の枠で囲んで読みやすくする</span></a></li>
+<li><a href="06-design/design07.html"><span class="headingnum">DESIGN 07</span><span class="headingtitle">グラデーションを利用したデザイン</span></a></li>
+<li><a href="06-design/design07-a.html"><span class="headingnum">07-A</span><span class="headingtitle">古いブラウザに対応するためのグラデーションの設定</span></a></li>
+<li><a href="06-design/design07-b.html"><span class="headingnum">07-B</span><span class="headingtitle">SVGを利用したグラデーションの設定</span></a></li>
+<li><a href="06-design/design08.html"><span class="headingnum">DESIGN 08</span><span class="headingtitle">パーツを重ねて表示するデザイン</span></a></li>
+</ul></div><div id="bootstrap" class="chapter"><h2><span>CHAPTER 7</span>Bootstrapを利用したページ作成</h2><ul>
+<li><a href="07-bootstrap/bootstrap01/sample.html"><span class="headingnum">BOOTSTRAP 01</span><span class="headingtitle">Bootstrapを利用してページを作成するための下準備</span></a></li>
+<li><a href="07-bootstrap/bootstrap01-cdn/sample.html"><span class="headingnum">TIPS</span><span class="headingtitle">BootstrapをCDNで利用する</span></a></li>
+<li><a href="07-bootstrap/bootstrap02/sample.html"><span class="headingnum">BOOTSTRAP 02</span><span class="headingtitle">グリッドの用意とパーツの配置</span></a></li>
+<li><a href="07-bootstrap/bootstrap02/bootstrap02-a.html"><span class="headingnum">02-A</span><span class="headingtitle">Bootstrapのグリッドシステム</span></a></li>
+<li><a href="07-bootstrap/bootstrap02/bootstrap02-b.html"><span class="headingnum">02-B</span><span class="headingtitle">グリッドのネスト</span></a></li>
+<li><a href="07-bootstrap/bootstrap02/bootstrap02-c.html"><span class="headingnum">02-C</span><span class="headingtitle">小さい画面でメニューを上に表示する</span></a></li>
+<li><a href="07-bootstrap/bootstrap03/sample.html"><span class="headingnum">BOOTSTRAP 03</span><span class="headingtitle">CSSに触れることなくBootstrapの機能だけでページを形にする</span></a></li>
+<li><a href="07-bootstrap/bootstrap03/bootstrap03-a-a.html"><span class="headingnum">03-A-A</span><span class="headingtitle">ナビゲーションバーのアレンジA</span></a></li>
+<li><a href="07-bootstrap/bootstrap03/bootstrap03-a-b.html"><span class="headingnum">03-A-B</span><span class="headingtitle">ナビゲーションバーのアレンジB</span></a></li>
+<li><a href="07-bootstrap/bootstrap03/bootstrap03-a-c.html"><span class="headingnum">03-A-C</span><span class="headingtitle">ナビゲーションバーのアレンジC</span></a></li>
+<li><a href="07-bootstrap/bootstrap04/sample.html"><span class="headingnum">BOOTSTRAP 04</span><span class="headingtitle">Bootstrapで形にしたページをテーマでアレンジする</span></a></li>
+<li><a href="07-bootstrap/bootstrap05/sample.html"><span class="headingnum">BOOTSTRAP 05</span><span class="headingtitle">Bootstrapで形にしたページをCSSでアレンジする</span></a></li>
+<li><a href="07-bootstrap/bootstrap05/tips-dropdown/sample.html"><span class="headingnum">TIPS</span><span class="headingtitle">ナビゲーションバーにドロップダウンメニューを追加する</span></a></li>
+</ul></div><div id="foundation" class="chapter"><h2><span>CHAPTER 8</span>Foundationを利用したページ作成</h2><ul>
+<li><a href="08-foundation/foundation01/sample.html"><span class="headingnum">FOUNDATION 01</span><span class="headingtitle">Foundationを利用してページを作成するための下準備</span></a></li>
+<li><a href="08-foundation/foundation02/sample.html"><span class="headingnum">FOUNDATION 02</span><span class="headingtitle">グリッドの用意とパーツの配置</span></a></li>
+<li><a href="08-foundation/foundation02/foundation02-a.html"><span class="headingnum">02-A</span><span class="headingtitle">Foundationのグリッドシステム</span></a></li>
+<li><a href="08-foundation/foundation02/foundation02-b.html"><span class="headingnum">02-B</span><span class="headingtitle">グリッドのネスト</span></a></li>
+<li><a href="08-foundation/foundation02/foundation02-c.html"><span class="headingnum">02-C</span><span class="headingtitle">小さい画面でメニューを上に表示する</span></a></li>
+<li><a href="08-foundation/foundation03/sample.html"><span class="headingnum">FOUNDATION 03</span><span class="headingtitle">CSSに触れることなくFoundationの機能だけでページを形にする</span></a></li>
+<li><a href="08-foundation/foundation03/foundation03-a-a.html"><span class="headingnum">03-A-A</span><span class="headingtitle">トップバーのアレンジA</span></a></li>
+<li><a href="08-foundation/foundation03/foundation03-a-b.html"><span class="headingnum">03-A-B</span><span class="headingtitle">トップバーのアレンジB</span></a></li>
+<li><a href="08-foundation/foundation03/foundation03-a-c.html"><span class="headingnum">03-A-C</span><span class="headingtitle">トップバーのアレンジC</span></a></li>
+<li><a href="08-foundation/foundation04/sample.html"><span class="headingnum">FOUNDATION 04</span><span class="headingtitle">Foundationで形にしたページをCSSでアレンジする</span></a></li>
+<li><a href="08-foundation/foundation04/tips-dropdown/sample.html"><span class="headingnum">TIPS</span><span class="headingtitle">トップバーにドロップダウンメニューを追加する</span></a></li>
+</ul></div><div id="noframework" class="chapter"><h2><span>CHAPTER 9</span>フレームワークを利用しないページ作成</h2><ul>
+<li><a href="09-no-framework/no-framework01/sample.html"><span class="headingnum">NO-FRAMEWORK 01</span><span class="headingtitle">パーツを配置して１段組みのレイアウトでページを形にする</span></a></li>
+<li><a href="09-no-framework/no-framework02/sample.html"><span class="headingnum">NO-FRAMEWORK 02</span><span class="headingtitle">段組みの設定を追加して２段組みのレイアウトにする</span></a></li>
+<li><a href="09-no-framework/no-framework03/sample.html"><span class="headingnum">NO-FRAMEWORK 03</span><span class="headingtitle">レスポンシブにして１段組みと２段組みのレイアウトを切り替える</span></a></li>
+<li><a href="09-no-framework/no-framework04/sample.html"><span class="headingnum">NO-FRAMEWORK 04</span><span class="headingtitle">コンテンツ全体が横に広がりすぎないようにする</span></a></li>
+<li><a href="09-no-framework/no-framework05/sample.html"><span class="headingnum">NO-FRAMEWORK 05</span><span class="headingtitle">パーツのデザインをアレンジする</span></a></li>
+</ul></div><div id="recipe" class="chapter"><h2><span>CHAPTER 10</span>レシピ</h2><ul>
+<li><a href="10-recipe/recipe01/sample.html"><span class="headingnum">RECIPE 01</span><span class="headingtitle">プロモーションサイト</span></a></li>
+<li><a href="10-recipe/recipe02/sample.html"><span class="headingnum">RECIPE 02</span><span class="headingtitle">プロモーションサイトのコンテンツページ</span></a></li>
+<li><a href="10-recipe/recipe03/sample.html"><span class="headingnum">RECIPE 03</span><span class="headingtitle">ビジネスサイト</span></a></li>
+<li><a href="10-recipe/recipe04/sample.html"><span class="headingnum">RECIPE 04</span><span class="headingtitle">ショップサイト</span></a></li>
+</ul></div>
+
+
+<small>&copy; 2014 E BISUCOM TECH LAB / マイナビ</small>
+
+</div><!-- contents -->
+
+</div><!-- container -->
+
+</body>
+</html>

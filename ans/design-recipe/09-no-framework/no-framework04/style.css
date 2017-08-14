@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+@-ms-viewport	{width: device-width;}
+
+body	{margin: 0;
+	font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;}
+
+
+
+/* ヘッダー */
+.header	{padding: 20px;
+	background-color: #dfe3e8;}
+
+.header h1	{margin: 0;
+	font-size: 20px;
+	line-height: 1;}
+
+.header h1 a	{color: #000;
+	text-decoration: none;}
+
+.header .logo	{margin: 0 10px 0 0;
+	border: none;
+	vertical-align: -15px;}
+
+
+
+/* メニュー（ナビゲーションメニュー） */
+.menu	{padding: 0; 
+	background-color: #333;}
+
+.menu ul,
+.menu ol	{margin: 0;
+	padding: 0;
+	font-size: 12px;
+	line-height: 1.4;
+	list-style: none;}
+
+.menu li a	{display: block;
+	padding: 10px;
+	color: #fff;
+	text-decoration: none;}
+
+.menu li a:hover	{background-color: #084;}
+
+.menu li	{float: left;}
+
+.menu ul:after,
+.menu ol:after	{content: "";
+	display: block;
+	clear: both;}
+.menu ul,
+.menu ol	{*zoom: 1;}
+
+
+
+
+/* 記事 */
+.entry	{padding: 20px;
+	background-color: #dfe3e8;}
+
+.entry img	{max-width: 100%;
+	height: auto;
+	margin: 0 0 30px 0;
+	vertical-align: bottom;}
+
+.entry h1	{margin: 0 0 20px 0;
+	font-size: 28px;
+	line-height: 1.2;}
+
+.entry p	{margin: 0 0 20px 0;
+	font-size: 14px;
+	line-height: 1.6;}
+
+.entry .added	{margin: 0 0 20px 0;}
+
+
+
+
+/* ラベル */
+.lb	{display: inline-block;
+	padding: 2px 15px 2px 15px;
+	border-radius: 4px;
+	background-color: #fa0;
+	color: #000;
+	font-size: 12px;
+	text-decoration: none;}
+
+.lb:hover, 
+.lb:focus	{outline: none;}
+
+
+
+/* メニュー（サブメニュー） */
+.submenu	{padding: 20px; 
+	background-color: #dfe3e8;}
+
+.submenu h1	{margin: 0 0 10px 0;
+	font-size: 18px;
+	line-height: 1.2;}
+
+.submenu ul,
+.submenu ol	{margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 1.4;
+	list-style: none;}
+
+.submenu li a	{position: relative;
+	display: block;
+	padding: 10px 5px 10px 30px;
+	color: #000;
+	text-decoration: none;}
+
+.submenu li a:hover	{background-color: #eee;}
+
+.submenu li a:before	{position: absolute;
+	left: 5px;
+	top: 10px;
+	content: '\f061';
+	color: #f80;
+	font-family: 'FontAwesome';
+	font-size: 20px;
+	line-height: 1;}
+
+
+
+/* フッター */
+.footer	{padding: 195px 20px 30px 20px;
+	background-image: url(img/footer.png);
+	background-position: center top;
+	text-align: center;}
+
+.footer p	{margin: 0 0 3px 0;
+	font-size: 12px;
+	line-height: 1.4;}
+
+.footer a	{color: #666;
+	text-decoration: none;}
+
+
+/* コンテナ */
+.container	{
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0 10px 0 10px;}
+
+
+@media (min-width: 768px) {
+
+/* 段組み */
+.col	{float: left;
+	width: 48.5%;
+	margin-left: 3%;
+	*clear: right;}
+
+.col:first-child	{margin-left: 0;}
+
+.cols:after	{content: "";
+	display: block;
+	clear: both;}
+.cols	{*zoom: 1;}
+
+
+/* 段ごとの横幅 */
+.col:first-child	{width: 65%;}
+
+.col:first-child + .col	{width: 32%;}
+
+} /* @media */
+
+
+
+

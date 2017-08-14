@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;}
+
+
+/* Ａ: ナビゲーションバー */
+.menu	{margin: 0} 
+
+.menu .navbar-brand	{font-family: 'Francois One', sans-serif;}
+
+
+
+/* Ｂ: ヘッダー */
+.header	{padding: 100px 0 0 0;
+	background-color: #dfe3e8;}
+
+.header img	{display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 100px auto 0 auto;
+	vertical-align: bottom;}
+
+.header h1	{margin: 0 0 20px 0;
+	font-size: 60px;
+	font-family: 'Francois One', sans-serif;
+	line-height: 1.2;}
+
+.header p	{margin: 0 0 20px 0;
+	font-size: 20px;
+	line-height: 1.6;}
+
+
+/* 背景画像の設定 */
+.header	{background-image: url(img/football.jpg);
+	background-position: 30% 50%;
+	background-size: cover;
+	color: #fff;
+	text-shadow: 2px 2px 5px #000;}
+
+.header .button	{text-shadow: none;}
+
+
+/* メディアクエリの設定 */
+@media (max-width: 450px) {
+
+	.header	{padding: 60px 0 0 0;}
+	.header h1	{font-size: 40px;}
+	.header p	{font-size: 14px;}
+
+} /* @media */
+
+
+
+
+/* Ｃ: パンくずリスト */
+.menu-bc	{padding: 0; 
+	background-color: #0c5a94;}
+
+.menu-bc .breadcrumb	{background-color: transparent;}
+
+.menu-bc ul,
+.menu-bc ol	{margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 1.4;
+	list-style: none;}
+
+.menu-bc li a	{display: inline-block;
+	padding: 10px 0 10px 0;
+	color: #fff;
+	text-decoration: none;}
+
+.menu-bc li a[href]:hover	{text-decoration: underline;}
+
+.menu-bc li a:not([href])	{color: #888;}
+
+.menu-bc li+li:before	{content: '\003e';
+	color: #ccc;}
+
+.menu-bc ul:after,
+.menu-bc ol:after	{content: "";
+	display: block;
+	clear: both;}
+.menu-bc ul,
+.menu-bc ol	{*zoom: 1;}
+
+
+
+
+/* Ｄ: 記事 */
+.entry	{padding: 80px 0 80px 0;
+	background-color: #e9e8dd;}
+
+.entry img	{max-width: 100%;
+	height: auto;
+	margin: 0 0 30px 0;
+	vertical-align: bottom;}
+
+.entry h2	{margin: 0 0 20px 0;
+	font-size: 28px;
+	line-height: 1.2;}
+
+.entry p	{max-width: 700px;
+	margin: 0 0 20px 0;
+	font-size: 16px;
+	line-height: 1.6;}
+
+/* テーブル */
+th	{background-color: #d9d8cc;}
+
+tr > :nth-child(n+3)	{text-align: center;}
+
+
+
+/* Ｅ: フッター大 */
+.footer-info	{padding: 80px 0 40px 0;
+	background-color: #0c5a94;
+	color: #fff;}
+
+.footer-info > h1	{margin: 0 0 20px 0;
+	font-size: 36px;}
+
+
+
+/* Ｅ１: プロモーション情報 */
+.promo	{margin-bottom: 40px;
+	padding: 20px;
+	border: solid 1px #fff;}
+
+.promo img	{float: left;
+	max-width: 30%;
+	height: auto;
+	margin: 0 20px 10px 0;
+	vertical-align: bottom;}
+
+.promo h3	{margin: 0 0 20px 0;
+	font-size: 28px;
+	line-height: 1.2;}
+
+.promo p	{margin: 0 0 20px 0;
+	font-size: 14px;
+	line-height: 1.6;}
+
+.promo:after	{content: "";
+	display: block;
+	clear: both;}
+.promo	{*zoom: 1;}
+
+
+
+/* Ｅ２: 画像付きメニュー */
+.menu-pickup	{margin-bottom: 40px;
+	padding: 0; }
+
+.menu-pickup h3	{margin: 0 0 10px 0;
+	font-size: 18px;
+	line-height: 1.2;}
+
+.menu-pickup ul,
+.menu-pickup ol	{margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 1.4;
+	list-style: none;}
+
+.menu-pickup li a	{display: block;
+	padding: 10px 5px 10px 5px;
+	color: #fff;
+	text-decoration: none;}
+
+.menu-pickup li a:hover	{background-color: #048;}
+
+.menu-pickup img	{float: left;
+	border: none;}
+
+.menu-pickup p	{margin: 0 0 0 110px;}
+
+.menu-pickup .title	{font-size: 16px;}
+
+.menu-pickup .desc	{color: #ccc;
+	font-size: 12px;}
+
+.menu-pickup li a:after	{content: "";
+	display: block;
+	clear: both;}
+.menu-pickup li a	{*zoom: 1;}
+
+
+
+/* Ｅ３: 画像なしメニュー */
+.menu-recent	{margin-bottom: 40px;
+	padding: 0;}
+
+.menu-recent h3	{margin: 0 0 10px 0;
+	font-size: 18px;
+	line-height: 1.2;}
+
+.menu-recent ul,
+.menu-recent ol	{margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 1.4;
+	list-style: none;}
+
+.menu-recent li a	{display: block;
+	padding: 10px 5px 10px 5px;
+	color: #fff;
+	text-decoration: none;}
+
+.menu-recent li a:hover	{background-color: #048;}
+
+
+
+/* Ｆ: フッター */
+.footer	{padding: 20px 0 20px 0;
+	background-color: #000;
+	color: #fff;}
+
+.footer p	{margin: 0 0 3px 0;
+	font-size: 12px;
+	line-height: 1.4;}
+
+.footer a	{color: #666;
+	text-decoration: none;}

@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
+	margin: 20px;}
+
+
+
+/* メニュー */
+.menu	{padding: 0}
+
+.menu h1	{margin: 0 0 10px 0;
+	font-size: 18px;
+	line-height: 1.2;}
+
+.menu ul,
+.menu ol	{margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 1.4;
+	list-style: none;}
+
+.menu li a	{display: block;
+	padding: 10px 5px 10px 5px;
+	color: #000;
+	text-decoration: none;}
+
+.menu li a:hover	{background-color: #eee;}
+
+
+
+/* 枠の設定 */
+.tab-pane	{padding: 20px;
+	border: solid 1px #ddd;
+	border-top: none;
+	background-color: #fff;}
+
+

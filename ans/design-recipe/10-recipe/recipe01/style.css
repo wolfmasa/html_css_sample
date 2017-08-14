@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;}
+
+
+/* Ａ: ナビゲーションバー */
+.menu	{margin: 0} 
+
+.menu .navbar-brand	{font-family: 'Francois One', sans-serif;}
+
+
+/* Ｂ: 紹介記事その１ */
+.about-app	{padding: 120px 0 0 0;
+	background-color: #dfe3e8;}
+
+.about-app img	{display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 100px auto 0 auto;
+	vertical-align: bottom;}
+
+.about-app h1	{margin: 0 0 20px 0;
+	font-size: 60px;
+	font-family: 'Francois One', sans-serif;
+	line-height: 1.2;}
+
+.about-app p	{margin: 0 0 20px 0;
+	font-size: 20px;
+	line-height: 1.6;}
+
+
+/* 背景画像の設定 */
+.about-app	{background-image: url(img/football.jpg);
+	background-position: 30% 50%;
+	background-size: cover;
+	color: #fff;
+	text-shadow: 2px 2px 5px #000;}
+
+.about-app .button	{text-shadow: none;}
+
+
+/* メディアクエリの設定 */
+@media (max-width: 450px) {
+
+	.about-app	{padding: 60px 0 0 0;}
+	.about-app h1	{font-size: 46px;}
+	.about-app p	{font-size: 14px;}
+
+} /* @media */
+
+
+
+
+/* Ｃ: 紹介記事その２ */
+.about-data	{padding: 80px 0 80px 0;
+	background-color: #efefee;}
+
+.about-data img	{display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto 30px auto;
+	vertical-align: bottom;}
+
+.about-data h2	{margin: 0 0 20px 0;
+	font-size: 28px;
+	line-height: 1.2;}
+
+.about-data p	{margin: 0 0 20px 0;
+	font-size: 16px;
+	line-height: 1.6;}
+
+
+
+/* Ｄ: 紹介記事その３ */
+.about-graph	{padding: 80px 0 80px 0;
+	background-color: #0c5a94;
+	color: #fff;}
+
+.about-graph img	{display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto 30px auto;
+	vertical-align: bottom;}
+
+.about-graph h2	{margin: 0 0 20px 0;
+	font-size: 28px;
+	line-height: 1.2;}
+
+.about-graph p	{margin: 0 0 20px 0;
+	font-size: 16px;
+	line-height: 1.6;}
+
+
+
+/* Ｅ: 紹介記事その４ */
+.about-more	{padding: 80px 0 80px 0;
+	background-color: #fff;
+	text-align: center;}
+
+.about-more img	{max-width: 100%;
+	height: auto;
+	margin: 20px auto 30px auto;
+	vertical-align: bottom;}
+
+.about-more h2	{margin: 0 0 20px 0;
+	font-size: 28px;
+	line-height: 1.2;}
+
+.about-more p	{margin: 0 0 20px 0;
+	font-size: 16px;
+	line-height: 1.6;}
+
+
+
+
+/* Ｆ: フッター */
+.footer	{padding: 20px 0 20px 0;
+	background-color: #000;
+	color: #fff;}
+
+.footer p	{margin: 0 0 3px 0;
+	font-size: 12px;
+	line-height: 1.4;}
+
+.footer a	{color: #666;
+	text-decoration: none;}
+

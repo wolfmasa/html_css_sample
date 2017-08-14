@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>サンプル</title>
+<meta name="viewport" content="width=device-width">
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* グループ */
+.group	{padding: 20px;
+	background-color: #dfe3e8;}
+
+.group > h1	{margin: 0 0 20px 0;
+	font-size: 36px;}
+
+
+/* 段組み */
+.col	{float: left;
+	width: 31%;
+	margin-left: 3.5%;
+	*clear: right;}
+
+.col:first-child	{margin-left: 0;}
+
+.cols:after	{content: "";
+	display: block;
+	clear: both;}
+.cols	{*zoom: 1;}
+
+
+
+
+/* 記事 */
+.entry	{padding: 20px;
+	background-color: #dfe3e8;}
+
+.entry01	{background-color: #93d869;}
+.entry02	{background-color: #cfd869;}
+.entry03	{background-color: #f0a65e;}
+
+.entry h2	{margin: 0 0 20px 0;
+	font-size: 28px;
+	line-height: 1.2;}
+
+.entry p	{margin: 0 0 20px 0;
+	font-size: 14px;
+	line-height: 1.6;}
+</style>
+</head>
+
+<body>
+
+
+<div class="group">
+<h1>CONTENTS</h1>
+
+
+<div class="cols">
+
+<div class="col">
+
+<div class="entry entry01">
+	<h2>記事のタイトルＡ</h2>
+	<p>この文章は記事の本文です。この文章は記事の本文です。この文章は記事の本文です。この文章は記事の本文です。この文章は記事の本文です。この文章は記事の本文です。この文章は記事の本文です。この文章は記事の本文です。</p>
+</div>
+
+</div>
+
+<div class="col">
+
+<div class="entry entry02">
+	<h2>記事のタイトルＢ</h2>
+	<p>この文章は記事の本文です。この文章は記事の本文です。この文章は記事の本文です。この文章は記事の本文です。この文章は記事の本文です。この文章は記事の本文です。この文章は記事の本文です。この文章は記事の本文です。</p>
+</div>
+
+</div>
+
+<div class="col">
+
+<div class="entry entry03">
+	<h2>記事のタイトルＣ</h2>
+	<p>この文章は記事の本文です。この文章は記事の本文です。この文章は記事の本文です。この文章は記事の本文です。この文章は記事の本文です。この文章は記事の本文です。この文章は記事の本文です。この文章は記事の本文です。</p>
+</div>
+
+</div>
+
+</div><!-- cols -->
+
+
+</div><!-- group -->
+
+
+</body>
+</html>
