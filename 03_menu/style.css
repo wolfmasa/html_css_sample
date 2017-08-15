@@ -6,12 +6,6 @@
         background-color: #dfe3e8;
 }
 
-.menu h1 {
-        margin: 0 0 10px 0;
-        font-size: 18px;
-        line-height: 1.2;
-}
-
 .menu ul,
 .menu ol {
         margin: 0;
@@ -22,7 +16,6 @@
 }
 
 .menu li a {
-        position: relative;
         display: block;
         padding: 10px 5px 10px 30px;
         color: #000;
@@ -33,14 +26,50 @@
         background-color: #eee;
 }
 
-.menu li a::before {
-        position: absolute;
-        left: 5px;
-        top: 10px;
-        content: url(img/listmark.png);
+.menu img {
+        float: left;
+        border: none;
 }
 
-.menu li li a {
-        padding-left: 20px;
+.menu p {
+        margin: 0 0 0 110px;
+}
+
+.menu .title {
+        font-weight: bold;
+}
+
+.menu .desc {
+        color: #666;
         font-size: 12px;
+}
+
+.menu li a:after {
+        content: "";
+        display: block;
+        clear: both;
+}
+
+.menu li a {
+        *zoom: 1;
+}
+
+.menu li {
+        float: left;
+}
+
+.menu ul:after,
+.menu ol:after {
+        content: "";
+        display: block;
+        clear: both;
+}
+
+.menu uo,
+.menu ol {
+        *zoom: 1;
+}
+
+.menu .menubar li a{
+        padding: 10 10 10 10;
 }
