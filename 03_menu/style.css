@@ -22,8 +22,18 @@
         text-decoration: none;
 }
 
-.menu li a:hover {
-        background-color: #eee;
+.menu li a span {
+        display: inline-block;
+        text-indent: -9999px;
+}
+
+.menu li a i {
+        font-size: 40px;
+        color: #e16;
+}
+
+.menu li a:hover i {
+        color: #f80;
 }
 
 .menu img {
@@ -73,3 +83,6 @@
 .menu .menubar li a{
         padding: 10 10 10 10;
 }
+
+.fa {*zoom: 1;}
+
