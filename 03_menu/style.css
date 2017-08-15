@@ -22,12 +22,25 @@
 }
 
 .menu li a {
+        position: relative;
         display: block;
-        padding: 10px 5px 10px 5px;
+        padding: 10px 5px 10px 30px;
         color: #000;
         text-decoration: none;
 }
 
 .menu li a:hover {
         background-color: #eee;
+}
+
+.menu li a::before {
+        position: absolute;
+        left: 5px;
+        top: 10px;
+        content: url(img/listmark.png);
+}
+
+.menu li li a {
+        padding-left: 20px;
+        font-size: 12px;
 }
