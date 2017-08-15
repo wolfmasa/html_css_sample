@@ -17,10 +17,12 @@
         text-decoration: none;
 }
 
-.footer .logo {
+.footer .text {
         float: left;
-        margin: 0 15px 0 0;
-        border: none;
+}
+
+.footer .added {
+        float: right;
 }
 
 .footer:after {
