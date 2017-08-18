@@ -102,3 +102,39 @@ th > :first-child{
         -moz-box-sizing: border-box;
         box-sizing: border-box;
 }
+
+.col {
+        float: left;
+        width: 31%;
+        margin-left: 3.5%;
+        *clear: right;
+}
+
+.col:first-child{
+        margin-left: 0;
+}
+
+.cols:after{
+        content: "";
+        display: block;
+        clear: both;
+}
+
+.cols {
+        *zoom:1;
+}
+
+.entry	{padding: 20px;
+	background-color: #dfe3e8;}
+
+.entry01	{background-color: #93d869;}
+.entry02	{background-color: #cfd869;}
+.entry03	{background-color: #f0a65e;}
+
+.entry h1	{margin: 0 0 20px 0;
+	font-size: 28px;
+	line-height: 1.2;}
+
+.entry p	{margin: 0 0 20px 0;
+	font-size: 14px;
+	line-height: 1.6;}
