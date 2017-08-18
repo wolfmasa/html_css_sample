@@ -77,3 +77,28 @@ input[type="submit"]::::-moz-focus-inner{
         padding: 0;
         border: none;
 }
+
+table {
+        border-collapse: collapse;
+}
+
+table, th, td {
+        border: solid 1px #aaa;
+}
+
+th, td {
+        padding: 8px;
+        font-size: 14px;
+        text-align: left;
+        vertical-align: top;
+}
+
+th {
+        background-color: #be6;
+}
+
+th > :first-child{
+        width: 120px;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}
