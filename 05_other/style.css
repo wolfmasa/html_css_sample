@@ -137,4 +137,15 @@ th > :first-child{
 
 .entry p	{margin: 0 0 20px 0;
 	font-size: 14px;
-	line-height: 1.6;}
+        line-height: 1.6;
+}
+
+.group {
+        padding: 20px;
+        background-color: #dfe3e8;
+}
+
+.group > h1 {
+        margin: 0 0 20px 0;
+        font-size: 36px;
+}
