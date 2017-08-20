@@ -9,16 +9,9 @@
 
 /* 背景画像の設定 */
 .entry{
-        background-image: url(img/candle.jpg);
-        background-position: 50% 50%;
-        background-size: cover;
-        color: #000;
+        background-image: linear-gradient(to bottom, #fff 0%, #cf0 100%);
 }
 
-.entry .inner {
-        padding: 20px;
-        background-color: rgba(255, 255, 255, 0.6);
-}
 
 .entry h1	{
         padding-bottom: 5px;
