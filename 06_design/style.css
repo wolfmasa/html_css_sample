@@ -138,26 +138,43 @@ th > :first-child{
         -webkit-box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.3);
         box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.3);
 }
-.entry02	{background-color: #cfd869;}
-.entry03	{background-color: #f0a65e;}
-
-/* 枠＋見出しの設定*/
-.entry {
-        padding: 0;
-        border: solid 1px #aaa;
-        background-color: #fff;
-}
-
-.entry > h1	{
-        margin: 0;
-        padding: 10px;
+.entry02	{
         background-color: #cf0;
-        font-size: 18px;
+        position: relative;
+}
+.entry02:after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 40px;
+        height: 0;
+        width: 0;
+        border: solid 20px transparent;
+        border-top-color: #cf0;
+}
+.entry03	{
+        background-color: #f0a65e;
+        padding: 80px 0 0 0;
+        border: solid 1px #aaa;
+        border-radius: 125px;
+        -webkit-box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.3);
+        box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.3);
+        height: 250px;
+        width: 250px;
+        margin: 0 auto 0 auto;
+        text-align: center;
+        -mox-box-sizing: border-box;
+        box-sizing: border-box;
 }
 
-.entry > p	{
-        margin: 10px;
+/* 線で区切る設定 */
+
+.entry h1	{
+        padding-bottom: 5px;
+        border-bottom: solid 1px #888;
+        border-left: solid 10px #ed1e79;
 }
+
 
 .group {
         padding: 20px;
