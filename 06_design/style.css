@@ -18,3 +18,42 @@
         border-bottom: solid 1px #888;
         border-left: solid 10px #ed1e79;
 }
+
+
+.button {
+        display: inline-block;
+        padding: 10px 30px 10px 30px;
+        background-color: #ed1a7d;
+        color: #fff;
+        font-size: 14px;
+        text-decoration: none;
+}
+
+.button{
+        display: block;
+        height: 100px;
+        width: 100px;
+        padding: 40px 0 0 0;
+        text-align: center;
+        margin: 0 auto 0 auto;
+        border-radius: 50px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+}
+
+.button:hover,
+.button:focus {
+        outline: none;
+        background-color: #ff9bca;
+}
+
+.entry{
+        position: relative;
+}
+
+.entry .button{
+        position: absolute;
+        bottom: -40px;
+        right: 30px;
+}
